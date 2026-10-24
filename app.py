@@ -15,7 +15,10 @@ st.set_page_config(
 # ==========================
 # LOAD MODEL
 # ==========================
-model = tf.keras.models.load_model("Brain_Tumor_CNN_Model.h5")
+model = tf.keras.models.load_model(
+    "Brain_Tumor_CNN_Model.h5",
+    compile=False
+)
 
 # ==========================
 # CLASS LABELS
